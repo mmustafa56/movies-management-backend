@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 // app.use("/api/v1/chinese/seller", require("./routes/chineseSeller"));
 
 ///Uploading file
-// app.use("/images", express.static(path.join(__dirname, "/upload/image"))); //getting image from data
+app.use("/images", express.static(path.join(__dirname, "/upload/image"))); //getting image from data
 
 app.listen(port, () => {
   console.log(`App is running on port ${port}`);
