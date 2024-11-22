@@ -17,6 +17,8 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+app.use("/apis/movies",require("./routes/favorite"))
 // app.use("/api/v1/product", require("./routes/product")); //
 // app.use("/api/v1/user", require("./routes/auth"));
 // app.use("/api/v1/cat", require("./routes/category"));

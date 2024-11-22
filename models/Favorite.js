@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
 const favoriteSchema = new mongoose.Schema({
-    _id:mongoose.Schema.Types.ObjectId
-    ,
+     _id: {
+        type: mongoose.Schema.Types.ObjectId, 
+        default: () => new mongoose.Types.ObjectId(), 
+    },
     movieName: {
         type: String,
         required: true,

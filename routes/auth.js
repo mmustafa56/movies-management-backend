@@ -1,6 +1,6 @@
-const {login,register} = require("../controllers/auth");
-  const { protect } = require("../middlewares/authMiddleware");
   const route = require("express").Router();
+  const {login,register} = require("../controllers/auth");
+  const { protect } = require("../middlewares/authMiddleware");
   
   //Login && Registeration
   route.post("/login", login);

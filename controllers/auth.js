@@ -55,12 +55,10 @@ const register = async (req, res) => {
     name,
     email,
     password: hash,
-    role,
-    cnic,
-    address,
-    city,
-    country,
-    phone,
+    address:{
+      city,
+      country
+    },
   });
 
   const createUser = await create_User.save();

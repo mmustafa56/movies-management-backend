@@ -2,7 +2,10 @@ const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema(
   {
-    _id : mongoose.Types.ObjectId.toString(),
+    _id: {
+      type: mongoose.Schema.Types.ObjectId, // Correct type
+      default: () => new mongoose.Types.ObjectId(), // Generates a unique ObjectId
+  },
     name: {
       type: String,
     },
