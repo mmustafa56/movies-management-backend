@@ -3,7 +3,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require("path");
 const dotenv = require("dotenv");
-// const connectDB = require("./config/database");
+const connectDB = require("./config/database");
 
 // const productRoutes = require('./routes/product')
 
