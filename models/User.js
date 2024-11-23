@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const userSchema = mongoose.Schema(
   {
     _id: {
-      type: mongoose.Schema.Types.ObjectId, // Correct type
-      default: () => new mongoose.Types.ObjectId(), // Generates a unique ObjectId
+      type: mongoose.Schema.Types.ObjectId, 
+      default: () => new mongoose.Types.ObjectId(), 
   },
     name: {
       type: String,

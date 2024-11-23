@@ -4,7 +4,7 @@ const movies = require("../utils/moviesList");
 
 const allFavorite = (req,res)=>{
 
-    console.log(movies)
+    res.send(movies.movies)
 
 }
 

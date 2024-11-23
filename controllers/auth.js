@@ -40,7 +40,7 @@ const login = async (req, res) => {
 
 //Registeration
 const register = async (req, res) => {
-  const { name, password, email, role, address, cnic, city, phone, country } = req.body; 
+  const { name, password, email, city,  country } = req.body; 
   const user = await User.findOne({ email });
   if (user) {
     return res.status(404).json({
