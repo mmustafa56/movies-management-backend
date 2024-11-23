@@ -1,10 +1,10 @@
-const movies = require("../utils/moviesList");
+// const movies = require("../utils/moviesList");
 
 
 
 const allFavorite = (req,res)=>{
 
-    res.send(movies.movies)
+    // res.send(movies.movies)
 
 }
 
