@@ -32,7 +32,7 @@ const login = async (req, res) => {
   delete user.password;
   return res.status(201).json({
     success: true,
-    message: "User successfully logged In ",
+    message: "User logged in successfully.",
     token,
     user,
   });
@@ -72,7 +72,7 @@ const register = async (req, res) => {
     return res.status(200).json({
       user: userData,
       token,
-      message: "user successfully register",
+      message: "user registered successfully",
       success: true,
     });
   }
