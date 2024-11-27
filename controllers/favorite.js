@@ -4,9 +4,8 @@ const Movie = require("../models/Favorite");
 const getFavorite = async (req, res) => {
     const userId = req.payload._id;
     try {
-        // console.log("jaskdfskjdfhasdjfhasdkjf")
         const favorite = await Movie.find({ userId: userId });
-        // console.log("ksdjfhksjdhfksdfhskdfh",favo/rite)
+        // console.log(favorite)
         return res.status(200).json({ success: true, data: favorite })
     } catch (error) {
         return res.status(500).json({ success: false, message: `Error : ${error}` })
