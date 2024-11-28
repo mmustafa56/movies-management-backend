@@ -20,17 +20,9 @@ app.use(bodyParser.json());
 
 app.use("/apis/movies",require("./routes/favorite"));
 app.use("/apis/user",require("./routes/auth"))
-// app.use("/api/v1/product", require("./routes/product")); //
-// app.use("/api/v1/user", require("./routes/auth"));
-// app.use("/api/v1/cat", require("./routes/category"));
-// app.use("/api/v1/reserve", require("./routes/reserve"));
-// app.use("/api/v1/order", require("./routes/order"));
-// app.use("/api/v1/market", require("./routes/market"));
-// app.use("/api/v1/status", require("./routes/status"));
-// app.use("/api/v1/chinese/seller", require("./routes/chineseSeller"));
 
 ///Uploading file
-app.use("/images", express.static(path.join(__dirname, "/upload/image"))); //getting image from data
+// app.use("/images", express.static(path.join(__dirname, "/upload/image"))); //getting image from data
 
 app.listen(port, () => {
   console.log(`App is running on port ${port}`);
